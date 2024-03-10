@@ -122,46 +122,41 @@ import { useEffect } from "react";
 
 
 const TextShpere = () => {
-
-
     useEffect(() => {
+        // return () => {
+        const container = ".tagcloud";
+        const texts = [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JavaScript",
+            "React",
+            "NodeJS",
+            "MongoDB",
+            "Express.js",
+            "Supabase",
+            "Firebase",
+            "Hygraph CMS",
+            "EJS",
+            "Next.js",
+            "Cloudinary",
+            "Git",
+            "GitHub",
+            "Prisma",
+            "REST Apis",
+            "Tailwind",
+            "Typescript"
+        ];
 
-        return () => {
-            const container = ".tagcloud";
-            const texts = [
-                "HTML",
-                "CSS",
-                "SASS",
-                "JavaScript",
-                "React",
-                "NodeJS",
-                "MongoDB",
-                "Express.js",
-                "Supabase",
-                "Firebase",
-                "Hygraph CMS",
-                "EJS",
-                "Next.js",
-                "Cloudinary",
-                "Git",
-                "GitHub",
-                "Prisma",
-                "REST Apis",
-                "Tailwind",
-                "Typescript"
-            ];
-            
-            if (window != undefined) {
-                const radius = window.innerWidth <= 768 ? 180 : 300;
-                const options = {
-                    radius: radius,
-                    maxSpeed: 'fast',
-                    initSpeed: 'fast',
-                    keep: true
-                };
-                TagCloud(container, texts, options);
-            }
+        const radius = window.innerWidth <= 768 ? 180 : 300;
+        const options = {
+            radius: radius,
+            maxSpeed: 'fast',
+            initSpeed: 'fast',
+            keep: true
         };
+        TagCloud(container, texts, options);
+        // };
     }, []);
 
 
@@ -171,29 +166,29 @@ const TextShpere = () => {
             <div className="grid place-content-center  grid-cols-2 mt-10 lg:py-2 lg:px-4 md:text-sm md:py-1.5  lg:grid-cols-1">
                 <div className="
                 grid-cols-2">
-              <h2 className="pt-16 text-left font-bold text-8xl mb-22 w-full p-3 md:text-6xl sm:text-4xl xs:text-3xl">Skill & Experience</h2>
-<p className="p-3 text-lg text-dark/75">Here's a summary of my skills and experience:</p>
+                    <h2 className="pt-16 text-left font-bold text-8xl mb-22 w-full p-3 md:text-6xl sm:text-4xl xs:text-3xl">Skill & Experience</h2>
+                    <p className="p-3 text-lg text-dark/75">Here's a summary of my skills and experience:</p>
 
-{/* <!-- Skills Section --> */}
-<div class="p-3">
-    <h3 class="text-xl font-semibold mb-2">Skills:</h3>
-    <ul class="list-disc ml-5">
-        <li>Proficient in JavaScript and java programming languages</li>
-        <li>Strong knowledge of web development technologies such as HTML, CSS, React.js, and Node.js</li>
-        <li>Experience with database management systems including SQL and MongoDB</li>
-        <li>Familiar with version control using Git</li>
-    </ul>
-</div>
+                    {/* <!-- Skills Section --> */}
+                    <div class="p-3">
+                        <h3 class="text-xl font-semibold mb-2">Skills:</h3>
+                        <ul class="list-disc ml-5">
+                            <li>Proficient in JavaScript and java programming languages</li>
+                            <li>Strong knowledge of web development technologies such as HTML, CSS, React.js, and Node.js</li>
+                            <li>Experience with database management systems including SQL and MongoDB</li>
+                            <li>Familiar with version control using Git</li>
+                        </ul>
+                    </div>
 
-{/* <!-- Experience Section --> */}
-<div class="p-3">
-    <h3 class="text-xl font-semibold mb-2">Experience:</h3>
-    <ul class="list-disc ml-5">
-        <li>Completed a Software Developer Internship at XYZ Company during the summer of 2023</li>
-        <li>Worked as a Freelance Web Developer from 2019 to 2022, completing various client projects</li>
-        <li>Participated in multiple hackathons and coding competitions, honing problem-solving skills</li>
-    </ul>
-</div>
+                    {/* <!-- Experience Section --> */}
+                    <div class="p-3">
+                        <h3 class="text-xl font-semibold mb-2">Experience:</h3>
+                        <ul class="list-disc ml-5">
+                            <li>Completed a Software Developer Internship at XYZ Company during the summer of 2023</li>
+                            <li>Worked as a Freelance Web Developer from 2019 to 2022, completing various client projects</li>
+                            <li>Participated in multiple hackathons and coding competitions, honing problem-solving skills</li>
+                        </ul>
+                    </div>
 
                 </div>
                 <motion.div
