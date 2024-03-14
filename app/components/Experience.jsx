@@ -6,11 +6,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
 
     return (
-        <li ref={ref} className="bg-light p-3 rounded-2xl my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex-col items-center justify-between md:w-[80%]  ">
+        <li ref={ref} className="edu-ex shadow-xl text-light p-3 rounded-2xl my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex-col items-center justify-between md:w-[80%]  ">
             <LiIcon reference={ref} />
             <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: 'spring' }} >
                 <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{position} &nbsp; <a href={companyLink}>@{company}</a></h3>
-                <span className="capitalize font-medium text-dark/75 xs:text-sm">{time} | {address}</span>
+                <span className="capitalize font-medium text-light/75 xs:text-sm">{time} | {address}</span>
                 <p className="font-medium w-full md:text-sm">{work}</p>
             </motion.div>
         </li>
@@ -25,10 +25,10 @@ const Experience = () => {
     const ref = useRef(null)
     const { scrollYProgress } = useScroll({ target: ref, offset: ["start center", "end end"] })
     return (
-        <div className="my-64 ">
-            <h2 className='text1 font-bold text-6xl mb-32 w-full text-center lg:text-8xl md:!text-5xl'>Experience</h2>
+        <div className="my-32 ">
+            <h2 className=' font-bold text-6xl mb-32 w-full text-center lg:text-8xl md:!text-5xl'>Experience</h2>
             <div ref={ref} className=" mx-auto w-[75%] relative lg:w-[90%] md:w-full">
-                <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 md:top-3 w-[2px] h-full bg-green-600 origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />
+                <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 md:top-3 w-[2px] h-full bg-black origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />
 
                 <ul className='w-full flex flex-col justify-between items-start ml-0 xs:ml-3'>
                     <Details

@@ -8,12 +8,15 @@ import { LinkArrow } from './components/icons'
 import HireMe from './components/HireMe'
 import { motion } from 'framer-motion'
 import Transition from './components/Transition'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 const Home = () => {
   return (
     <>
       <Transition />
+      <Navbar/>
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0 md:pt-16 sm:pt-8 xl:!p-8 '>
           <div className="flex items-center justify-between w-full lg:flex-col">
@@ -35,7 +38,7 @@ const Home = () => {
               <p className='my-3 text-base font-medium md:text-sm sm:text-xs'>I like to craft solid and scalable frontend products with great user experiences.</p>
               <div className='flex items-center self-start mt-2 lg:self-center' >
                 <Link href='https://google.com' className='flex items-center bg-dark text-light p-2 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark md:p-2 md:px-4 md:text-base' target='_blank'>Resume <LinkArrow className='w-6 ml-1' /></Link>
-                <Link className='ml-4 text-lg font-medium capitalize md:text-base text:dark underline' href='https://google.com'>Contact</Link>
+                <Link className='ml-4 text-lg font-medium capitalize md:text-base text:dark underline' href="mailto:admaurya765@gmail.com">Contact</Link>
               </div>
             </div>
           </div>
@@ -46,6 +49,7 @@ const Home = () => {
         bulb'/>
         </div>
       </main>
+      <Footer/>
     </>
   )
 }

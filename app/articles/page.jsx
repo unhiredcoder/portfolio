@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useMotionValue } from 'framer-motion'
 import Transition from '../components/Transition'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Articles = () => {
 
@@ -86,6 +88,7 @@ const Articles = () => {
     return (
         <>
     <Transition/>
+    <Navbar/>
         <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
             <Layout className='pt-4 md:!p-8'>
                 <AnimatedText text='Words Can Change The World !' className='mb-16 text-center lg:!text-7xl sm:!mb-8 md:!text-6xl xs:!text-4xl ' />
@@ -163,6 +166,7 @@ const Articles = () => {
                 </ul>
             </Layout>
         </main >
+        <Footer/>
         </>
     )
 }

@@ -7,6 +7,8 @@ import Skills from '../components/Skills'
 import Experience from '../components/Experience';
 import Education from '../components/Education';
 import Transition from '../components/Transition';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 
@@ -14,8 +16,9 @@ const About = () => {
     return (
         <div >
             <Transition />
+            <Navbar />
             <main className='flex w-full bg-b py-4 flex-col items-center justify-center'>
-                <Layout className='pt-0 md:!p-8 sm:!pt-0 '>
+                <Layout className='pt-0 lg:!p-6 md:!p-6 sm:!pt-0 '>
                     <AnimatedText text='Fashion Fules Purpose.' className='mb-16 text-center lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-8' />
                     <div className="grid w-full grid-cols-8 gap-16  xl:grid-cols-4       md:text-center sm:!gap-8">
                         <div className='col-span-3 flex flex-col items-start justify-start  md:!order-2 md:col-span-8'>
@@ -57,6 +60,7 @@ const About = () => {
                     <Education />
                 </Layout>
             </main>
+            <Footer />
         </div>
     )
 }

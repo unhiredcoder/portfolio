@@ -1,13 +1,5 @@
-// 'use client'
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-// import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
-// import Head from "next/head";
-// import Transition from "./components/Transition";
-// import { AnimatePresence } from "framer-motion";
-// import { useEffect, useState } from "react";
-// import PreLoader from "./components/PreLoader";
 import Provider from "./components/Provider";
 
 

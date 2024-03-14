@@ -116,61 +116,96 @@
 
 
 'use  client'
-import TagCloud from "TagCloud";
+// import TagCloud from "TagCloud";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 
 const TextShpere = () => {
+    // useEffect(() => {
+    //     // return () => {
+    //     const container = ".tagcloud";
+    //     const texts = [
+    //         "HTML",
+    //         "CSS",
+    //         "SASS",
+    //         "JavaScript",
+    //         "React",
+    //         "NodeJS",
+    //         "MongoDB",
+    //         "Express.js",
+    //         "Supabase",
+    //         "Firebase",
+    //         "Hygraph CMS",
+    //         "EJS",
+    //         "Next.js",
+    //         "Cloudinary",
+    //         "Git",
+    //         "GitHub",
+    //         "Prisma",
+    //         "REST Apis",
+    //         "Tailwind",
+    //         "Typescript"
+    //     ];
+
+    //     const radius = window.innerWidth <= 768 ? 180 : 300;
+    //     const options = {
+    //         radius: radius,
+    //         maxSpeed: 'fast',
+    //         initSpeed: 'fast',
+    //         keep: true
+    //     };
+    //     TagCloud(container, texts, options);
+    //     // };
+    // }, []);
+
+
+
     useEffect(() => {
-        // return () => {
-        const container = ".tagcloud";
-        const texts = [
-            "HTML",
-            "CSS",
-            "SASS",
-            "JavaScript",
-            "React",
-            "NodeJS",
-            "MongoDB",
-            "Express.js",
-            "Supabase",
-            "Firebase",
-            "Hygraph CMS",
-            "EJS",
-            "Next.js",
-            "Cloudinary",
-            "Git",
-            "GitHub",
-            "Prisma",
-            "REST Apis",
-            "Tailwind",
-            "Typescript"
-        ];
+    const createTagCloud = () => {
+        const canvas = document.getElementById('myCanvas');
+        const radius = window.innerWidth <= 768 ? 350 : 600;
+        const textsize = window.innerWidth <= 768 ? 10 :20;
+        const depth = window.innerWidth <= 768 ? 0.8 : false;
+        if (canvas) {
+            canvas.width = radius;
+            canvas.height = radius;
+            window.TagCanvas.Start('myCanvas', '', {
+                textColour: "#08fdd8",
+                outlineColour: "transparent",
+                reverse: true,
+                bgColor:null,
+                depth:depth,
+                minSpeed: 0.03,
+                textHeight:textsize,	
+                weight:true,
+                wheelZoom:false,
+                maxSpeed: 0.05,
+                weight: true,
+                pinchZoom: false,
+                shuffleTags: true,
+                dragControl: true,
+            });
 
-        const radius = window.innerWidth <= 768 ? 180 : 300;
-        const options = {
-            radius: radius,
-            maxSpeed: 'fast',
-            initSpeed: 'fast',
-            keep: true
-        };
-        TagCloud(container, texts, options);
-        // };
-    }, []);
+        }
+    };
 
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/jquery-tagcanvas@2.9.0/tagcanvas.min.js';
+    script.async = true;
+    script.onload = createTagCloud;
+    document.body.appendChild(script);
+
+}, []);
 
 
     return (
         <>
-            <div className="grid place-content-center  grid-cols-2 mt-10 lg:py-2 lg:px-4 md:text-sm md:py-1.5  lg:grid-cols-1">
+            <div className="kk rounded-3xl shadow-xl grid place-content-center grid-cols-2 mt-32 lg:py-2 lg:px-1 md:text-sm md:py-1.5  lg:grid-cols-1">
                 <div className="
                 grid-cols-2">
-                    <h2 className="pt-16 text-left font-bold text-8xl mb-22 w-full p-3 md:text-6xl sm:text-4xl xs:text-3xl">Skill & Experience</h2>
-                    <p className="p-3 text-lg text-dark/75">Here's a summary of my skills and experience:</p>
-
-                    {/* <!-- Skills Section --> */}
-                    <div class="p-3">
+                    <h2 className="text-light pt-16 text-left font-bold text-6xl mb-22 w-full p-3 !md:text-4xl !sm:text-3xl !xs:text-2xl">Me, Myself and I</h2>
+                    <div class="p-3 text-light">
                         <h3 class="text-xl font-semibold mb-2">Skills:</h3>
                         <ul class="list-disc ml-5">
                             <li>Proficient in JavaScript and java programming languages</li>
@@ -179,9 +214,8 @@ const TextShpere = () => {
                             <li>Familiar with version control using Git</li>
                         </ul>
                     </div>
-
                     {/* <!-- Experience Section --> */}
-                    <div class="p-3">
+                    <div class="p-3 text-light">
                         <h3 class="text-xl font-semibold mb-2">Experience:</h3>
                         <ul class="list-disc ml-5">
                             <li>Completed a Software Developer Internship at XYZ Company during the summer of 2023</li>
@@ -194,11 +228,35 @@ const TextShpere = () => {
                 <motion.div
                     viewport={{ once: true }}
                     initial={{ scale: 0 }}
-                    transition={{ duration: 2, type: 'spring' }}
+                    transition={{ duration: 2, type: 'spring', }}
                     whileInView={{ scale: 1 }}
-                    className="grid-cols-2"
+                    className="grid-cols-2 flex items-center justify-center"
                 >
-                    <span className={`tagcloud mast`}></span>
+                 
+                    <canvas id="myCanvas">
+                        <span><a href="#" onClick={(e) => e.preventDefault()}>HTML</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>CSS</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>SASS</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>JavaScript</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>React</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>NodeJS</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>MongoDB</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Express.js</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Supabase</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Firebase</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Hygraph CMS</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>EJS</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Next.js</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Cloudinary</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Git</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>GitHub</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Prisma</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>REST Apis</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Tailwind</a></span>
+<span><a href="#" onClick={(e) => e.preventDefault()}>Typescript</a></span>
+
+
+                    </canvas>
                 </motion.div>
             </div>
         </>
@@ -207,6 +265,48 @@ const TextShpere = () => {
 };
 
 export default TextShpere;
+
+
+
+
+
+
+
+
+
+// 'use client'
+// import React, { useEffect } from 'react';
+
+// const TagCloud = () => {
+//     useEffect(() => {
+ 
+
+//     return (
+//         <div className='bg-white h-screen w-screen grid place-content-center' id="myCanvasContainer">
+
+//         </div>
+//     );
+// };
+
+// export default TagCloud;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

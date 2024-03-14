@@ -54,7 +54,7 @@ const PreLoader = () => {
                     return 100;
                 }
             });
-        }, 30);
+        }, 50);
 
         const randomIndex = Math.floor(Math.random() * quotes.length);
         setRandomQuote(quotes[randomIndex]);

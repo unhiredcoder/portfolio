@@ -38,9 +38,6 @@ const Transition = () => {
             const animation = controls.start({
                 height: ['0%', '100%'],
                 transition: {duration: 0.5, ease: 'easeInOut' },
-                // delay: delayIncrement * index + 0.1,
-                // repeat: Infinity, // Repeat the animation indefinitely
-                // repeatDelay: 0.9 * numBars // Delay before repeating the animation
             });
 
             // Set the height to 0% after the animation completes
@@ -65,12 +62,11 @@ const Transition = () => {
             {[...Array(numBars)].map((_, index) => (
                 <motion.div
                     key={index}
-                    className="fixed top-0 w-[15%] h-screen z-30 bg-[#000336] sm:!hidden"
+                    className="fixed top-0 w-[15%] h-screen z-30 bg-dark sm:!hidden"
                     style={{ left: `${(index / numBars) * 100}%` }}
                     initial={{ height: '100%' }}
                     // animate={{ height: ['100%', '0%'] }}
                     // transition={{ delay: delayIncrement * index + 0.1, duration: 0.9, ease: 'easeInOut' }}
-
                     animate={controlsArray[index]}
                 />
             ))}
