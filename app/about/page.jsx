@@ -21,7 +21,7 @@ const About = () => {
                 <Layout className='pt-0 lg:!p-6 md:!p-6 sm:!pt-0 '>
                     <AnimatedText text='Fashion Fules Purpose.' className='mb-16 text-center lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-8' />
                     <div className="grid w-full grid-cols-8 gap-16  xl:grid-cols-4       md:text-center sm:!gap-8">
-                        <div className='col-span-3 flex flex-col items-start justify-start  md:!order-2 md:col-span-8'>
+                        <div className='col-span-3 flex flex-col items-start justify-start   md:!order-2 md:col-span-8'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
                             <p className='font-medium'> Hi, I'm Unhired Coder, a web developer and UI/UX designer with a passion for creating beautiful, functional,
                                 and user-centered digital experiences. With 4 years of experience in the field. I am always looking for

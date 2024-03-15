@@ -36,8 +36,8 @@ const quotes = [
 ];
 
 // import { Orbitron } from 'next/font/google';
-import { Lobster_Two } from 'next/font/google'
-const orbitron = Lobster_Two({ subsets: ['latin'],weight:'400', variable: '--font-orb' });
+import { Bungee_Shade } from 'next/font/google'
+const orbitron = Bungee_Shade({ subsets: ['latin'],weight:'400', variable: '--font-orb' });
 
 
 const PreLoader = () => {
@@ -67,10 +67,10 @@ const PreLoader = () => {
 
     return (
         <>
-            <motion.div className="magicpattern w-screen h-screen p-8 flex sm:flex-col items-center bg-black justify-center">
-                <h2 className="text-white text-lg">Hi, there <span className="inline-block text-2xl animate-waving-hand">👋🏻</span></h2>
-                <h1 className={`${orbitron.className} text-[14rem] inline-block font-orb font-bold text-gray-600 absolute bottom-0 right-0 md:text-[3rem] md:bottom-5 md:right-5`}>
-                    {percentage}<small className='text-[6rem] sm:text-3xl'>%</small>
+            <motion.div className="magicpattern  p-8 flex sm:flex-col items-center bg-black justify-center">
+                <h2 className="text-white text-3xl font-bold">Hi, there <span className="inline-block text-3xl animate-waving-hand">👋🏻</span></h2>
+                <h1 className={`${orbitron.className} text-[12rem] inline-block font-orb font-bold text-gray-600 absolute bottom-0 right-0 md:text-[8rem] sm:!text-[3rem]  md:bottom-5 md:right-5`}>
+                    {percentage}<small className='text-[6rem] md:text-[3rem] sm:!text-xl'>%</small>
                 </h1>
                 <p className="text-sm mt-4 absolute right-[70%] bottom-10 text-gray-400 italic text-wrap text-center sm:text-xs sm:top-20 sm:left-[0%] sm:w-full sm:px-4">{randomQuote}</p>
             </motion.div>

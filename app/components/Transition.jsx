@@ -29,46 +29,57 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 const Transition = () => {
-    const numBars = 10; // Number of bars
-    const delayIncrement = 0.1; // Delay increment for each bar
-    const controlsArray = [...Array(numBars)].map(() => useAnimation()); // Array to hold animation controls
+    const numBars = 40; // Number of bars
+    const delayIncrement = 0.015; // Delay increment for each bar
+    // const controlsArray = [...Array(numBars)].map(() => useAnimation()); // Array to hold animation controls
 
-    useEffect(() => {
-        controlsArray.forEach((controls, index) => {
-            const animation = controls.start({
-                height: ['0%', '100%'],
-                transition: {duration: 0.5, ease: 'easeInOut' },
-            });
+    // useEffect(() => {
+    //     controlsArray.forEach((controls, index) => {
+    //         const animation = controls.start({
+    //             height: ['0%', '100%'],
+    //             transition: {duration: 0.9, ease: 'easeInOut' },
+    //         });
 
-            // Set the height to 0% after the animation completes
-            animation.then(() =>
-                setTimeout(() => {
-                    controls.start({
-                        height:"0%",
-                        transition: {   delay: delayIncrement * index + 0.1, duration: 0.5, ease: 'easeInOut' },
-                    })
-                }, 600)
+    //         // Set the height to 0% after the animation completes
+    //         animation.then(() =>
+    //             setTimeout(() => {
+    //                 controls.start({
+    //                     height:"0%",
+    //                     transition: {   delay: delayIncrement * index + 0.1, duration: 0.9, ease: 'easeInOut' },
+    //                 })
+    //             }, 200)
 
-            );
-        });
+    //         );
+    //     });
 
-        return () => {
-            controlsArray.forEach(controls => controls.stop());
-        };
-    }, [controlsArray, delayIncrement, numBars]);
+    //     return () => {
+    //         controlsArray.forEach(controls => controls.stop());
+    //     };
+    // }, [controlsArray, delayIncrement, numBars]);
 
     return (
         <>
             {[...Array(numBars)].map((_, index) => (
+                <>
                 <motion.div
                     key={index}
-                    className="fixed top-0 w-[15%] h-screen z-30 bg-dark sm:!hidden"
-                    style={{ left: `${(index / numBars) * 100}%` }}
-                    initial={{ height: '100%' }}
-                    // animate={{ height: ['100%', '0%'] }}
-                    // transition={{ delay: delayIncrement * index + 0.1, duration: 0.9, ease: 'easeInOut' }}
-                    animate={controlsArray[index]}
+                    className="fixed top-0 w-[50%] h-screen z-30 bg-dark sm:!hidden"
+                    style={{ top: `${(index / numBars) * 100}%` }}
+                    initial={{ width: '50%' }}
+                    animate={{ width: ['50%', '0%'] }}
+                    transition={{ delay: delayIncrement * index + 0.1, duration: 0.9, ease: 'easeInOut',type:"tween" }}
+                    // animate={controlsArray[index]}
                 />
+                <motion.div
+                    key={index}
+                    className="fixed right-0 w-[50%] h-screen z-30 bg-dark sm:!hidden"
+                    style={{ top: `${(index / numBars) * 100}%` }}
+                    initial={{ width: '50%' }}
+                    animate={{ width: ['50%', '0%'] }}
+                    transition={{ delay: delayIncrement * index + 0.1, duration: 0.9, ease: 'easeInOut',type:"tween" }}
+                    // animate={controlsArray[index]}
+                />
+                </>
             ))}
         </>
     );

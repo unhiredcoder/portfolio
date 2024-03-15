@@ -31,7 +31,7 @@ const Home = () => {
                 className=' w-full h-auto mt-0 mr-4 lg:hidden md:!inline-block  md:!w-full' />
             </div>
             <motion.div
-              className='w-40 h-40 rounded-full absolute -z-10 right-40 top-28 bg-gradient-to-r from-indigo-500 to-blue-500 blur-[100px] md:top-1 md:left-0 '
+              className='w-60 h-60 rounded-full absolute -z-10 right-40 top-[30%] bg-gradient-to-r from-indigo-500 to-blue-500 blur-[110px] md:top-1 md:left-0 '
             ></motion.div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl md:!text-center sm:!text-3xl' />

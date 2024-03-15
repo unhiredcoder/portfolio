@@ -157,7 +157,7 @@ const Articles = () => {
                     />
                     <Article
                         title='
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quisquam nihil eligendi. Accusantium et nisi fugit id inventore dolor rerum.
+                    Coming soooooooooooooooooooooooon...
                     '
                         link={"/"}
                         read="Read more"
