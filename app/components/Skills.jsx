@@ -50,22 +50,15 @@ const TextShpere = () => {
                 grid-cols-2">
                     <h2 className="text-light pt-16 text-left font-bold text-6xl mb-22 w-full p-3 !md:text-4xl !sm:text-3xl !xs:text-2xl">Me, Myself and I</h2>
                     <div class="p-3 text-light">
-                        <h3 class="text-xl font-semibold mb-2">Skills:</h3>
-                        <ul class="list-disc ml-5">
-                            <li>Proficient in JavaScript and java programming languages</li>
-                            <li>Strong knowledge of web development technologies such as HTML, CSS, React.js, and Node.js</li>
-                            <li>Experience with database management systems including SQL and MongoDB</li>
-                            <li>Familiar with version control using Git</li>
-                        </ul>
-                    </div>
-                    {/* <!-- Experience Section --> */}
-                    <div class="p-3 text-light">
-                        <h3 class="text-xl font-semibold mb-2">Experience:</h3>
-                        <ul class="list-disc ml-5">
-                            <li>Completed a Software Developer Internship at XYZ Company during the summer of 2023</li>
-                            <li>Worked as a Freelance Web Developer from 2019 to 2022, completing various client projects</li>
-                            <li>Participated in multiple hackathons and coding competitions, honing problem-solving skills</li>
-                        </ul>
+                    <p class="text-light">
+                        I am dedicated with a passion for software development, I am driven by the desire to learn and innovate. I am currently pursuing BSC (CS) at @Viva college . My journey in the realm of technology began with an insatiable curiosity and has since evolved into a deep-rooted commitment to mastering various programming languages and web development technologies.
+                         <br /> <br />
+                        Proficient in JavaScript and Java programming languages. Possess a strong command of web development technologies such as HTML, CSS, React.js, and Node.js. Experienced in database management systems including SQL and MongoDB. Well-versed in version control using Git.
+                    </p> <br />
+                    <p class="text-light">
+                        Throughout my academic journey, I have actively sought opportunities to apply my skills and expand my knowledge.I gained hands-on experience in developing and deploying software solutions. Additionally, I have worked as a Freelance Web Developer and created websites and applications that meet client's unique needs.
+                    </p>
+
                     </div>
 
                 </div>

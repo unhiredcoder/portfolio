@@ -77,7 +77,7 @@ const Navbar = () => {
                 </nav>
                 <nav className='flex items-center justify-between flex-wrap'>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><LinkedInIcon /></motion.a>
-                    <motion.a href='https://github.com/unhiredCoder' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><GithubIcon /></motion.a>
+                    <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><GithubIcon /></motion.a>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><TwitterIcon /></motion.a>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 ml-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><PinterestIcon /></motion.a>
                 </nav>
