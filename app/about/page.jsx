@@ -15,6 +15,9 @@ import Footer from '../components/Footer';
 const About = () => {
     return (
         <div >
+            <head>
+                <title>Unhired Coder - About</title>
+            </head>
             <Transition />
             <Navbar />
             <main className='flex w-full bg-b py-4 flex-col items-center justify-center'>

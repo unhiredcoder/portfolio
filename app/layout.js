@@ -3,7 +3,7 @@ import "./globals.css";
 import Provider from "./components/Provider";
 
 export const metadata = {
-  title: "Unhired Coder",
+  title: "Unhired Coder - Home",
   description: "Unhired coder portfolio", 
   icons: {
     icon: '/UCLOGOB.png'

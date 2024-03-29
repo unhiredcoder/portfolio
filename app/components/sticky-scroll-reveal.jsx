@@ -50,8 +50,8 @@ export const StickyScroll = ({
 
   function Skills({ name, img, className: style = "bg-dark" }) {
     return (
-      <div className={`inline-flex  items-center justify-center rounded-full font-sm text-sm relative p-1 m-1 px-4 border border-solid border-black`}>
-        <img src={img} alt={name} className="w-6 h-6 mx-1" />
+      <div className={`inline-flex  items-center justify-center rounded-full font-sm text-sm relative p-1 m-1 px-4 border border-solid border-black sm:px-2 `}>
+        <img src={img} alt={name} className="w-6 h-6 mx-1 sm:w-4 sm:h-5" />
         <span className="text-dark text-sm font-normal">{name}</span>
       </div>
     );
@@ -64,13 +64,15 @@ export const StickyScroll = ({
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }} >
       <Navbar />
-      <AnimatedText className='h-full w-full  grid place-content-center text-center text-[10rem] lg:!text-7xl sm:!mb-8 md:!text-6xl sm:p-3 xs:!text-4xl ' text='Imagination Trumps Knowledge' />
-      <h2 className='text-2xl flex items-center justify-center  font-bold  w-full text-center'>
+      <AnimatedText className={`h-full w-full  grid place-content-center text-center text-[10rem] lg:!text-7xl sm:!mb-3 md:!text-6xl sm:p-2 xs:!text-4xl`} text='Imagination Trumps Knowledge ' />
+      <div className="md:hidden">
+      <h2 className=' text-2xl flex items-center justify-center  font-bold  w-full text-center'>
         ✨ &nbsp;   Featured Projects  &nbsp; ✨
       </h2> <br /><br />
       <center className="md:hidden">
         <pre><span className="animate-bounce	inline-block">&#8595;</span> Scroll down <span className="animate-bounce	inline-block">&#8595;</span></pre>
       </center>
+      </div>
       <motion.div
         className="h-[30rem] overflow-y-auto flex justify-evenly  relative space-x-3 rounded-md p-10 md:!p-4"
         ref={ref}
@@ -88,23 +90,26 @@ export const StickyScroll = ({
                   scale: activeCard === index ? 1 : .4,
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                transition={{ ease: "easeOut", duration: 0.5, type: "spring" }} // Add transition for smooth animation
-                className="my-20 md:mb-0"
+                transition={{ ease: "easeOut", duration: 0.5, type: "spring" }} 
+                className="my-20 p-4 md:mb-0"
               >
-                <motion.h2
-                  className="text-2xl font-bold text-black"
-                >
-                  {item.title}
-                </motion.h2>
+                <a href={content[activeCard].live_link} >
+                  <motion.h2
+                    className="text-2xl font-bold text-black hover:underline"
+                  >
+                    {item.title}
+                  </motion.h2>
+                </a>
+
                 <motion.p
-                  className="text-kg text-black max-w-auto mt-10"
+                  className="text-lg text-black max-w-auto mt-10 sm:mt-2 sm:text-sm"
                 >
                   {item.description}
                 </motion.p>
                 <motion.div
                   className="text-kg text-black max-w-auto mt-3 font-bold"
                 >
-                  <h1 className="top-2 font-bold">⚙️ Technologies used in this project.</h1>
+                  <h1 className="top-2 font-bold sm:text-sm">⚙️ Technologies used in this project.</h1>
                   {item.technologies.map((tech, index) => (
                     <Skills key={index} name={tech.name} img={tech.img} />
                   ))}
@@ -125,7 +130,7 @@ export const StickyScroll = ({
           {content[activeCard].content ?? null}
           <div className={`flex items-center justify-center  backdrop-blur-md  absolute  ${hovered ? "opacity-100" : "opacity-0"} bg-black/40 rounded-full   transition-opacity duration-300`}>
             <button rel="noopener noreferrer" className="   text-white text-center rounded-full cursor-pointer w-fit p-3 ">
-              <a href={'/'} target="_blank" className="flex items-center cursor-pointer
+              <a href={content[activeCard].code_link}  target="_blank" className="flex items-center cursor-pointer
   justify-center">
                 Code
                 &nbsp;<svg class="w-6 h-6  text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

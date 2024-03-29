@@ -130,6 +130,9 @@ const Portfolio = () => {
   ];
   return (
     <>
+      <head>
+        <title>Unhired Coder - Projects</title>
+      </head>
       <Transition />
       <StickyScroll content={content} />
     </>

@@ -59,7 +59,7 @@ const Navbar = () => {
 
 
     return (
-        <header className='relative w-full px-32 pl-8 py-8 font-medium  flex items-center justify-between border border-b border-solid'>
+        <header className='relative w-full px-32 pl-8 py-8 font-medium  flex items-center justify-between'>
             <button
                 onClick={(e) => handleClick(e)} className='flex-col z-20 justify-center cursor-pointer items-center hidden  lg:flex'
             >

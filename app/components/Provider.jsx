@@ -7,13 +7,13 @@ const Provider = ({ children }) => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 0)
+        }, 5000)
     }, []);
 
     const initBotPress = () => {
         window.botpressWebChat.init({
-            "composerPlaceholder": `Ask me about Aditya's work... `,
-            "botConversationDescription": "I'm here to help you in exploring... ",
+            "composerPlaceholder": `Ask me anything about Aditya's portfolio...`,
+            "botConversationDescription": "Discover Aditya's creative journey",
             "botId": "9de00488-7b02-4991-bc3f-b85ac9948bc3",
             "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
             "messagingUrl": "https://messaging.botpress.cloud",

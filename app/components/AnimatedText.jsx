@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const AnimatedText = ({ text, className = "" }) => {
+const AnimatedText = ({text, className = "" }) => {
 
     const letterVariants = {
         initial: {
@@ -25,16 +25,26 @@ const AnimatedText = ({ text, className = "" }) => {
         },
     };
 
+    // const colors = [
+    //     "#d9f99d",    // Fresh and vibrant lime
+    //     "#2dd4bf",    // Vibrant teal
+    //     "#d8b4fe",    // Deep purple for richness
+    //     "#fb923c",    // Energetic orange
+    //     "#93c5fd",    // Calm and professional blue
+    //     "#a5b4fc",    // Subtle indigo shade
+    //     "#fcd34d",    // Warm and professional amber
+    //   ];
     
-
+    
     return (
-        <div className='w-full mx-auto py-2 flex items-center justify-center text-left overflow-hidden  '>
+        <div 
+        className='w-full mx-auto py-2 flex items-center justify-center text-left overflow-hidden  '>
             <motion.span
             // style={{backgroundImage: '-webkit-gradient(linear, left top, right top, from(#079de0), to(#3aecba))'}}
                 transition={{ staggerChildren: 0.05, delayChildren: 0.5 }}
                 initial="initial"
                 animate="animate"
-                className={`inline-block break-word   font-bold  text-dark text-8xl w-full ${className}`}
+                className={`inline-block break-word font-bold text-dark text-8xl w-full ${className}`}
             >
                 {text.split(" ").map((word, idx) => (
                     <div
