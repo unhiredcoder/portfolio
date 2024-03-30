@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 
 /* html{
   scroll-snap-type: y mandatory;
@@ -16,6 +16,7 @@
   border: 1px solid;
 } */
 
+*{cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;} 
 body {
   user-select: none;
 }

@@ -39,7 +39,7 @@ const Articles = () => {
                 <h2 className='capitalize text-xl font-semibold sm:text-sm hover:underline'>
                     {title}
                 </h2>
-                <MotImage initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.4 } }}
+                <MotImage initial={{ opacity: 0, scale: 0 }} transition={{type:"spring"}} whileInView={{ opacity: 1, scale: 1.6}}
                     layout='responsive' width='300' height='300' style={{ x: x, y: y }} src={img} alt={title} ref={imgRef} className=' z-10 w-44 hidden absolute rounded-lg md:!hidden' />
             </Link>
         );
