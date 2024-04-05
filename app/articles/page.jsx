@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import Layout from '../components/Layout'
 import AnimatedText from '../components/AnimatedText'
 import Link from 'next/link'
@@ -8,8 +8,6 @@ import { motion, useMotionValue } from 'framer-motion'
 import Transition from '../components/Transition'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import RINGS from 'vanta/dist/vanta.rings.min'
-import Script from 'next/script'
 
 const Articles = () => {
     const MotImage = motion(Image)
@@ -92,7 +90,6 @@ const Articles = () => {
             <Navbar />
             <head>
                 <title>Unhired Coder - Articles</title>
-                <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.163.0/three.module.min.js" />
             </head>
             <main id='ele' className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
                 <Layout className='pt-4 md:!p-8'>
