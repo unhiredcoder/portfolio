@@ -3,23 +3,9 @@
 @tailwind utilities;
 
 
-@font-face {
-  font-family: digital;
-  src: url('././../public/digital-dismay/Digital\ Dismay.otf');
-}
-
-.load{
-  font-family: digital;
-}
 ::-webkit-scrollbar {
   display: none;
 }
-
-/* html{
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-} */
-
 
 /* *{
   border: 1px solid;
