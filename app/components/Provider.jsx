@@ -25,19 +25,19 @@ const Provider = ({ children }) => {
             "frontendVersion": "v1",
             "theme": "dark",
             "botName": "Max",
-            "themeColor":"#08fdd8",
+            "themeColor": "#08fdd8",
         });
     }
 
     return (
         <div>
+            {!loading && <head>
+                <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" onLoad={() => {
+                    initBotPress();
+                }} />
+            </head>}
             {
                 !loading ? <>
-                    <head>
-                        <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" onLoad={() => {
-                            initBotPress();
-                        }} />
-                    </head>
                     {children}
                 </> : (
                     <>

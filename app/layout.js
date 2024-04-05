@@ -20,20 +20,24 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#1b1b1b" />
       </head>
       <body className={`${mont.className} font-mont}`}>
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
-          innerScale={1}
-          outerScale={2}
-          outerAlpha={0}
-          hasBlendMode={true}
-          innerStyle={{
-            backgroundColor: 'gray'
-          }}
-          outerStyle={{
-            border: '3px solid gray'
-          }}
-        />
+        <span className="sm:hidden">
+          <AnimatedCursor
+             innerSize={5}
+             trailingSpeed={10}
+             outerSize={45}
+             innerScale={0}
+             outerScale={0}
+             outerAlpha={0}
+             hasBlendMode={true}
+             innerStyle={{
+               backgroundColor: 'gray',
+             }}
+             outerStyle={{
+               border: '1px solid gray'
+             }}
+          />
+
+        </span>
         <Provider>
           {children}
         </Provider>

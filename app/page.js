@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Layout from './components/Layout'
 import Image from 'next/image'
 import AnimatedText from './components/AnimatedText'
@@ -10,13 +10,19 @@ import { motion } from 'framer-motion'
 import Transition from './components/Transition'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+// import { RingsAnimation } from './components/RingsAnimation'
+// import GLOBE from "vanta/dist/vanta.globe.min";
+// import * as THREE from "three";
 
 
 const Home = () => {
+
   return (
     <>
       <Transition />
-      <Navbar/>
+      <Navbar />
+      {/* <div  ref={vantaRef}> */}
+
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0 md:pt-16 sm:pt-8 xl:!p-8 '>
           <div className="flex items-center justify-between w-full lg:flex-col">
@@ -31,7 +37,7 @@ const Home = () => {
                 className=' w-full h-auto mt-0 mr-4 lg:hidden md:!inline-block  md:!w-full' />
             </div>
             <motion.div
-              className='w-60 h-60 rounded-full absolute -z-10 right-40 top-[30%] bg-gradient-to-r from-indigo-500 to-blue-500 blur-[110px] md:top-1 md:left-0 '
+              className='w-60 h-60 rounded-full absolute -z-10 right-40 top-[30%] bg-gradient-to-r from-indigo-500 to-blue-500 blur-[80px] md:top-1 md:left-0 '
             ></motion.div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl md:!text-center sm:!text-3xl' />
@@ -49,7 +55,8 @@ const Home = () => {
         bulb'/>
         </div>
       </main>
-      <Footer/>
+      <Footer />
+      {/* </div> */}
     </>
   )
 }

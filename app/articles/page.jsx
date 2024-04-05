@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Layout from '../components/Layout'
 import AnimatedText from '../components/AnimatedText'
 import Link from 'next/link'
@@ -8,9 +8,10 @@ import { motion, useMotionValue } from 'framer-motion'
 import Transition from '../components/Transition'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import RINGS from 'vanta/dist/vanta.rings.min'
+import Script from 'next/script'
 
 const Articles = () => {
-
     const MotImage = motion(Image)
 
     function MovingImg({ title, img, link }) {
@@ -39,7 +40,7 @@ const Articles = () => {
                 <h2 className='capitalize text-xl font-semibold sm:text-sm hover:underline'>
                     {title}
                 </h2>
-                <MotImage initial={{ opacity: 0, scale: 0 }} transition={{type:"spring"}} whileInView={{ opacity: 1, scale: 1.6}}
+                <MotImage initial={{ opacity: 0, scale: 0 }} transition={{ type: "spring" }} whileInView={{ opacity: 1, scale: 1.6 }}
                     layout='responsive' width='300' height='300' style={{ x: x, y: y }} src={img} alt={title} ref={imgRef} className=' z-10 w-44 hidden absolute rounded-lg md:!hidden' />
             </Link>
         );
@@ -90,9 +91,10 @@ const Articles = () => {
             <Transition />
             <Navbar />
             <head>
-            <title>Unhired Coder - Articles</title>
+                <title>Unhired Coder - Articles</title>
+                <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.163.0/three.module.min.js" />
             </head>
-            <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+            <main id='ele' className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
                 <Layout className='pt-4 md:!p-8'>
                     <AnimatedText text='Words Can Change The World !' className='mb-16 text-center lg:!text-7xl sm:!mb-8 md:!text-6xl xs:!text-4xl ' />
                     <ul className='grid grid-cols-3 gap-16 lg:grid-cols-2 lg:!gap-8 md:!grid-cols-1 md:!gap-y-16'>

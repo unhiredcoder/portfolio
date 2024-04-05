@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const HireMe = () => {
     return (
-        <div className='absolute left-4 bottom-4 flex items-center justify-center overflow-hidden md:right-3 md:left-auto md:top-0 md:bottom-auto '>
+        <div className='absolute left-4 bottom-16 flex items-center justify-center overflow-hidden md:right-3 md:left-auto md:top-0 md:bottom-auto '>
             <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}

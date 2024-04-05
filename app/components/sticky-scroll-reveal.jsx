@@ -138,7 +138,7 @@ export const StickyScroll = ({
                 </svg>
               </a>
             </button> <span className="text-white">|</span>
-            <button rel="noopener noreferrer" className="   text-white text-center rounded-full cursor-pointer w-fit p-3 ">
+            <button rel="noopener noreferrer" className="   text-white text-center rounded-full   -pointer w-fit p-3 ">
               <a href={content[activeCard].live_link} target="_blank" className="flex  cursor-pointer
  items-center justify-center">
                 Try it live

@@ -26,7 +26,7 @@ const About = () => {
                     <div className="grid w-full grid-cols-8 gap-16  xl:grid-cols-4       md:text-center sm:!gap-8">
                         <div className='col-span-3 flex flex-col items-start justify-start   md:!order-2 md:col-span-8'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
-                            <p className='font-medium'> Hi, I'm Unhired Coder, a web developer and UI/UX designer with a passion for creating beautiful, functional,
+                            <p className='font-medium'> Hi, I'm Aditya Maurya (Unhired Coder), a web developer and UI/UX designer with a passion for creating beautiful, functional,
                                 and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
                                 new and innovative ways to bring my clients' visions to life.</p>
                             <p className='font-medium my-4'>I believe that design is about more than just making things look pretty – it's about solving problems and
