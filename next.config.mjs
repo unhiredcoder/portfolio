@@ -22,6 +22,14 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'media.graphassets.com',
           },
+          {
+            protocol: 'https',
+            hostname: 'static-00.iconduck.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'repository-images.githubusercontent.com',
+          },
         ],
       },
 };

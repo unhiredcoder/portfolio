@@ -1,6 +1,7 @@
 'use client'
 import Transition from "../components/Transition";
 import { StickyScroll } from "../components/sticky-scroll-reveal";
+import Image from "next/image";
 
 
 
@@ -18,7 +19,9 @@ const Portfolio = () => {
       ],
       description: "A redesign concept for SpaceX's website, aiming for a modern and sleek look. The design focuses on enhancing user experience and showcasing SpaceX's achievements in an engaging manner.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/spacex.png" alt="Image 1" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/spacex.png" alt="Image 1" />
       ),
     },
     {
@@ -31,7 +34,9 @@ const Portfolio = () => {
       ],
       description: "Fitclub is a dynamic website catering to fitness enthusiasts, offering a comprehensive range of services from workout plans to nutrition guidance. Its intuitive interface and smooth animations make it a delight to use.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/gym.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/gym.png" alt="Image 2" />
       ),
     },
     {
@@ -48,7 +53,9 @@ const Portfolio = () => {
       ],
       description: "MelodyBox is a full-stack MP3 music player application, allowing users to stream their favorite tracks and create personalized playlists. Powered by Node.js, Firebase, and MongoDB, it provides a seamless listening experience.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/melody.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/melody.png" alt="Image 2" />
       ),
     },
     {
@@ -63,7 +70,9 @@ const Portfolio = () => {
       ],
       description: "Nextjs Auth System is a robust authentication system built with Next.js, Firebase, and Ant Design. It offers secure user authentication functionalities such as login and signup, with MongoDB as the backend database for data storage.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/nextauth.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/nextauth.png" alt="Image 2" />
       ),
     },
     {
@@ -78,7 +87,9 @@ const Portfolio = () => {
       ],
       description: "Mini Product Management is a CRUD application designed to streamline product management tasks. Built using React and Node.js with Express, it offers simple yet powerful functionalities for creating, reading, updating, and deleting products.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/CRUD.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/CRUD.png" alt="Image 2" />
       ),
     },
     {
@@ -93,7 +104,9 @@ const Portfolio = () => {
       ],
       description: "C2P ventures is a dynamic web and app development agency specializing in creating innovative solutions for businesses. With expertise in HTML, CSS, JavaScript, and Node.js, we deliver tailor-made digital experiences that drive growth and success.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/c2p.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/c2p.png" alt="Image 2" />
       ),
     },
     {
@@ -109,7 +122,9 @@ const Portfolio = () => {
       ],
       description: "Code2pdf is a tool that simplifies the process of transforming your code into PDFs. Built with HTML, CSS, JavaScript, Node.js, and Express, it offers a convenient solution for developers to generate printable documents from their code snippets.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/code2pdf.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/code2pdf.png" alt="Image 2" />
       ),
     },
     {
@@ -124,14 +139,16 @@ const Portfolio = () => {
       ],
       description: "Trek Exotic offers a luxurious experience for travelers, featuring a curated selection of luxury hotels and rooms. With HTML, CSS, and JavaScript, we bring stunning visuals and seamless navigation to showcase the beauty of these destinations.",
       content: (
-        <img className='rounded-xl shadow-2xl' src="/trek.png" alt="Image 2" />
+        <Image   width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/trek.png" alt="Image 2" />
       ),
     }
   ];
   return (
     <>
       <head>
-        <title>Unhired Coder - Projects</title>
+        <title>Unhired Coder | Projects</title>
       </head>
       <Transition />
       <StickyScroll content={content} />

@@ -5,7 +5,7 @@ import AnimatedCursor from "react-animated-cursor"
 
 
 export const metadata = {
-  title: "Unhired Coder - Home",
+  title: "Unhired Coder | Home",
   description: "Unhired coder portfolio",
   icons: {
     icon: '/UCLOGOB.png'

@@ -89,7 +89,7 @@ const Articles = () => {
             <Transition />
             <Navbar />
             <head>
-                <title>Unhired Coder - Articles</title>
+                <title>Unhired Coder | Articles</title>
             </head>
             <main id='ele' className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
                 <Layout className='pt-4 md:!p-8'>

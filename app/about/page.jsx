@@ -16,7 +16,7 @@ const About = () => {
     return (
         <div >
             <head>
-                <title>Unhired Coder - About</title>
+                <title>Unhired Coder | About</title>
             </head>
             <Transition />
             <Navbar />
