@@ -42,7 +42,7 @@ const Home = () => {
               <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl md:!text-center sm:!text-3xl' />
               <p className='my-3 text-base font-medium md:text-sm sm:text-xs'>I like to craft solid and scalable frontend products with great user experiences.</p>
               <div className='flex items-center self-start mt-2 lg:self-center' >
-                <Link href='https://google.com' className='flex items-center bg-dark text-light p-2 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark md:p-2 md:px-4 md:text-base' target='_blank'>Resume <LinkArrow className='w-6 ml-1' /></Link>
+                <Link href='' className='flex items-center bg-dark text-light p-2 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark md:p-2 md:px-4 md:text-base' target='_blank'>Resume <LinkArrow className='w-6 ml-1' /></Link>
                 <Link className='ml-4 text-lg font-medium capitalize md:text-base text:dark underline' href="mailto:admaurya765@gmail.com">Contact</Link>
               </div>
             </div>

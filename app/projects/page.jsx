@@ -53,7 +53,7 @@ const Portfolio = () => {
       ],
       description: "MelodyBox is a full-stack MP3 music player application, allowing users to stream their favorite tracks and create personalized playlists. Powered by Node.js, Firebase, and MongoDB, it provides a seamless listening experience.",
       content: (
-        <Image   width={500}
+        <img   width={500}
           height={500}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-xl shadow-2xl' src="/melody.png" alt="Image 2" />
       ),

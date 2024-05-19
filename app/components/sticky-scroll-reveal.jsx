@@ -64,11 +64,11 @@ export const StickyScroll = ({
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }} >
       <Navbar />
-      <AnimatedText className={`h-full w-full  grid place-content-center text-center text-[10rem] lg:!text-7xl sm:!mb-3 md:!text-6xl sm:p-2 xs:!text-4xl`} text='Imagination Trumps Knowledge ' />
-      <div className="md:hidden">
-      <h2 className=' text-2xl flex items-center justify-center  font-bold  w-full text-center'>
-        ✨ &nbsp;   Featured Projects  &nbsp; ✨
-      </h2> <br /><br />
+      <AnimatedText className={`h-full w-full  grid place-content-center text-center text-[10rem] lg:!text-8xl sm:!mb-3 md:!text-6xl sm:p-2 xs:!text-3xl`} text='Imagination Trumps Knowledge ' />
+      <div className="md:hidden"> <br /><br /><br />
+      {/* <h2 className=' text-2xl flex items-center justify-center  font-bold  w-full text-center'>
+        ✨ &nbsp;   Featured Projects  &nbsp; ✨ 
+      </h2> <br /><br /> */}
       <center className="md:hidden">
         <pre><span className="animate-bounce	inline-block">&#8595;</span> Scroll down <span className="animate-bounce	inline-block">&#8595;</span></pre>
       </center>

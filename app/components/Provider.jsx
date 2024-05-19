@@ -7,7 +7,7 @@ const Provider = ({ children }) => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 5000)
+        }, 3500)
     }, []);
 
     const initBotPress = () => {

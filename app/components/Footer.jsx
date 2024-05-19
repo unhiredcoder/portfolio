@@ -12,7 +12,7 @@ const Footer = () => {
           By &nbsp;
           <Link href='/' className='underline-offset-2'>Unhired Coder</Link>
         </div>
-        <Link href='/' target='_blank'>Say Hello</Link>
+        <Link href="mailto:admaurya765@gmail.com" target='_blank'>Say Hello</Link>
         {/* </pre> */}
       </Layout>
     </footer>

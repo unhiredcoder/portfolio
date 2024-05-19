@@ -42,7 +42,7 @@ const About = () => {
                         <div className='col-span-2 flex flex-col items-end justify-between xl:!col-span-8 xl:!flex-row xl:items-center md:!order-3 '>
                             <div className='flex flex-col items-end justify-center xl:items-center'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl whitespace-nowrap'>
-                                    <NumberCounter end={50} start={0} preFix="+" />
+                                    <NumberCounter end={10} start={0} preFix="+" />
                                 </span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied client</h2>
                             </div>
@@ -52,7 +52,7 @@ const About = () => {
                                 <h2 className='text-xl font-medium capitalize text-dark/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Project completed</h2>
                             </div>
                             <div className='flex flex-col items-end justify-center  xl:items-center'>                                   <span className='inline-block text-7xl font-bold  md:text-6xl sm:text-5xl xs:text-4xl'>
-                                <NumberCounter end={4} start={0} preFix="+" />
+                                <NumberCounter end={2} start={0} preFix="+" />
                             </span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>year of experience.</h2>
                             </div>
