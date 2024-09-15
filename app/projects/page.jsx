@@ -30,7 +30,7 @@ const Projects = () => {
         <title>Unhired Coder | Projects</title>
       </head>
       <Transition />
-      {content ? <StickyScroll content={content} /> : <p>Loading...</p>}
+      {content && <StickyScroll content={content} />}
     </>
 
   );
