@@ -6,6 +6,7 @@ import { cn } from "../utils/cn.js";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import AnimatedText from "./AnimatedText.jsx";
+import Image from "next/image.js";
 
 export const StickyScroll = ({
   content,
@@ -66,12 +67,12 @@ export const StickyScroll = ({
       <Navbar />
       <AnimatedText className={`h-full w-full  grid place-content-center text-center text-[10rem] lg:!text-8xl sm:!mb-3 md:!text-6xl sm:p-2 xs:!text-3xl`} text='Imagination Trumps Knowledge ' />
       <div className="md:hidden"> <br /><br /><br />
-      {/* <h2 className=' text-2xl flex items-center justify-center  font-bold  w-full text-center'>
+        {/* <h2 className=' text-2xl flex items-center justify-center  font-bold  w-full text-center'>
         ✨ &nbsp;   Featured Projects  &nbsp; ✨ 
       </h2> <br /><br /> */}
-      <center className="md:hidden">
-        <pre><span className="animate-bounce	inline-block">&#8595;</span> Scroll down <span className="animate-bounce	inline-block">&#8595;</span></pre>
-      </center>
+        <center className="md:hidden">
+          <pre><span className="animate-bounce	inline-block">&#8595;</span> Scroll down <span className="animate-bounce	inline-block">&#8595;</span></pre>
+        </center>
       </div>
       <motion.div
         className="h-[30rem] overflow-y-auto flex justify-evenly  relative space-x-3 rounded-md p-10 md:!p-4"
@@ -90,7 +91,7 @@ export const StickyScroll = ({
                   scale: activeCard === index ? 1 : .4,
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                transition={{ ease: "easeOut", duration: 0.5, type: "spring" }} 
+                transition={{ ease: "easeOut", duration: 0.5, type: "spring" }}
                 className="my-20 p-4 md:mb-0"
               >
                 <a href={content[activeCard].live_link} >
@@ -127,10 +128,22 @@ export const StickyScroll = ({
             contentClassName
           )}
         >
-          {content[activeCard].content ?? null}
+          {/* {content[activeCard].content ?? null} */}
+          {content[activeCard]?.content ? (
+            <Image
+              src={content[activeCard].content}
+              alt={content[activeCard].title}
+              width={500}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              height={500}
+              className="rounded-xl shadow-2xl"
+            />
+          ) : null}
+
+
           <div className={`flex items-center justify-center  backdrop-blur-md  absolute  ${hovered ? "opacity-100" : "opacity-0"} bg-black/40 rounded-full   transition-opacity duration-300`}>
             <button rel="noopener noreferrer" className="   text-white text-center rounded-full cursor-pointer w-fit p-3 ">
-              <a href={content[activeCard].code_link}  target="_blank" className="flex items-center cursor-pointer
+              <a href={content[activeCard].code_link} target="_blank" className="flex items-center cursor-pointer
   justify-center">
                 Code
                 &nbsp;<svg class="w-6 h-6  text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

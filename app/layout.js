@@ -6,10 +6,25 @@ import AnimatedCursor from "react-animated-cursor"
 
 export const metadata = {
   title: "Unhired Coder | Home",
-  description: "Unhired coder portfolio",
+  title: "Unhired Coder | Portfolio",
+  description: "Explore the Unhired Coder's portfolio, showcasing modern web development projects including e-commerce platforms, social media apps, and collaborative coding tools. Built using cutting-edge technologies like React, Next.js, and Prisma.",
+  keywords: "Unhired Coder, Web Development, Portfolio, React, Next.js, Tailwind CSS, Prisma, Full-Stack Development, JavaScript, Projects, MERN Stack",
   icons: {
-    icon: '/UCLOGOB.png'
-  }
+    icon: '/UCLOGOB.png',
+  },
+  openGraph: {
+    title: "Unhired Coder | Portfolio",
+    description: "Showcasing full-stack development projects including e-commerce platforms, social media applications, and coding collaboration tools. Built with React, Next.js, and Prisma.",
+    url: "https://unhiredcoder.vercel.app",
+    images: [
+      {
+        url: '/UCLOGOB.png',
+        width: 800,
+        height: 600,
+        alt: "Unhired Coder Logo",
+      },
+    ],
+  },
 };
 
 const mont = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
