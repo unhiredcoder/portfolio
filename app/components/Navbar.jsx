@@ -76,8 +76,8 @@ const Navbar = () => {
                     <CustomLink title='Articles' className='  p-[2px] inline-flex items-center ml-4' href='/articles' />
                 </nav>
                 <nav className='flex items-center justify-between flex-wrap'>
-                    <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><LinkedInIcon /></motion.a>
-                    <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><GithubIcon /></motion.a>
+                    <motion.a href='https://in.linkedin.com/in/aditya-maurya-profile' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><LinkedInIcon /></motion.a>
+                    <motion.a href='https://github.com/unhiredcoder' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><GithubIcon /></motion.a>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><TwitterIcon /></motion.a>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 ml-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><PinterestIcon /></motion.a>
                 </nav>
@@ -98,8 +98,8 @@ const Navbar = () => {
                 </nav>
 
                 <nav className='flex items-center justify-evenly mt-3 flex-wrap'>
-                    <motion.a href='' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><LinkedInIcon /></motion.a>
-                    <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><GithubIcon /></motion.a>
+                    <motion.a href='https://in.linkedin.com/in/aditya-maurya-profile' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><LinkedInIcon /></motion.a>
+                    <motion.a href='https://github.com/unhiredcoder' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><GithubIcon /></motion.a>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 mx-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><TwitterIcon /></motion.a>
                     <motion.a href='/' whileHover={{ y: -4, scale: 1.2 }} className='w-7 ml-3 drop-shadow-md' whileTap={{ scale: 0.9 }} target='_blank'><PinterestIcon /></motion.a>
                 </nav>
