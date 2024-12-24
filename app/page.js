@@ -49,10 +49,10 @@ const Home = () => {
           </div>
         </Layout>
         <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24 drop-shadow-xl md:hidden'>
-          <Image src={'/miscellaneous_icons_1.svg'} width={100} height={100} className='h-auto' alt='
-        bulb'/>
-        </div>
+        // <div className='absolute right-8 bottom-8 inline-block w-24 drop-shadow-xl md:hidden'>
+        //   <Image src={'/miscellaneous_icons_1.svg'} width={100} height={100} className='h-auto' alt='
+        // bulb'/>
+        // </div>
       </main>
       <Footer />
       {/* </div> */}
