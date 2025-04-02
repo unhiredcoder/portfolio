@@ -21,7 +21,6 @@ const Home = () => {
     <>
       <Transition />
       <Navbar />
-      {/* <div  ref={vantaRef}> */}
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0 md:pt-16 sm:pt-8 xl:!p-8 '>
           <div className="flex items-center justify-between w-full lg:flex-col">
@@ -42,20 +41,15 @@ const Home = () => {
               <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl md:!text-center sm:!text-3xl' />
               <p className='my-3 text-base font-medium md:text-sm sm:text-xs'>I like to craft solid and scalable frontend products with great user experiences.</p>
               <div className='flex items-center self-start mt-2 lg:self-center' >
-                <Link href='https://drive.google.com/file/d/1P7ap9OvX2FLB0lDRueo45byeTkqJ-ECq/view?usp=drivesdk' className='flex items-center bg-dark text-light p-2 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark md:p-2 md:px-4 md:text-base' target='_blank'>Resume <LinkArrow className='w-6 ml-1' /></Link>
+                <Link href='https://drive.google.com/file/d/1JnQRHkZPUTdaYGx2T6NBp0QT3_LO47Jq/view?usp=sharing' className='flex items-center bg-dark text-light p-2 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark md:p-2 md:px-4 md:text-base' target='_blank'>Resume <LinkArrow className='w-6 ml-1' /></Link>
                 <Link className='ml-4 text-lg font-medium capitalize md:text-base text:dark underline' href="mailto:admaurya765@gmail.com">Contact</Link>
               </div>
             </div>
           </div>
         </Layout>
         <HireMe />
-        // <div className='absolute right-8 bottom-8 inline-block w-24 drop-shadow-xl md:hidden'>
-        //   <Image src={'/miscellaneous_icons_1.svg'} width={100} height={100} className='h-auto' alt='
-        // bulb'/>
-        // </div>
       </main>
       <Footer />
-      {/* </div> */}
     </>
   )
 }
