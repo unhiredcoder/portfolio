@@ -42,14 +42,14 @@ const Education = () => {
 
                     <Details
                         type='Bachelor Of Science ( Computer Science )'
-                        time='2021-present'
+                        time='2022-2025'
                         place='VIVA College is an institute in Virar, Maharashtra, India, affiliated to the University of Mumbai'
                         info='Currently pursuing Computer Science in the second year of my Higher Secondary Education.'
                     />
                     <Details
                         type='Higher Secondary Education (10+2)'
-                        time='2019-2020'
-                        place='Mahura bal vidyalaya'
+                        time='2019-2022'
+                        place='Mahura bal vidyalaya & viva college'
                         info='Completed my 10+2  '
                     />
                     <Details
